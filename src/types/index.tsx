@@ -107,5 +107,5 @@ export interface IParticleParams {
 }
 
 // Define presets and defaults
-export type TPresets = "default";
+export type TPresets = "default" | "snow" | "stars" | "fireflies";
 export type TDefaults = { [key in TPresets]: Required<IParticleParams> };

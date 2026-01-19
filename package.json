@@ -34,12 +34,12 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yourusername/your-repo-name.git"
+    "url": "git+https://github.com/nikatopu/react-particles-node-module.git"
   },
   "bugs": {
-    "url": "https://github.com/yourusername/your-repo-name/issues"
+    "url": "https://github.com/nikatopu/react-particles-node-module/issues"
   },
-  "homepage": "https://github.com/yourusername/your-repo-name#readme",
+  "homepage": "https://github.com/nikatopu/react-particles-node-module#readme",
   "devDependencies": {
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
