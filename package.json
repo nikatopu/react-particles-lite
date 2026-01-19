@@ -1,0 +1,55 @@
+{
+  "name": "react-particles-lite",
+  "version": "1.0.0",
+  "description": "A high-performance, lightweight particle engine for React using QuadTree spatial partitioning.",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.tsx --format cjs,esm --dts --minify --clean --external react --external react-dom",
+    "dev": "tsup src/index.tsx --format cjs,esm --watch --dts --external react --external react-dom",
+    "lint": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "react",
+    "particles",
+    "canvas",
+    "animation",
+    "quadtree",
+    "background",
+    "interactive"
+  ],
+  "author": "Nikoloz Topuridze",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/your-repo-name.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/your-repo-name/issues"
+  },
+  "homepage": "https://github.com/yourusername/your-repo-name#readme",
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tsup": "^8.5.1",
+    "typescript": "^5.0.0"
+  },
+  "peerDependencies": {
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0"
+  }
+}
